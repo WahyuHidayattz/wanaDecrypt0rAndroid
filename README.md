@@ -1,4 +1,6 @@
-#WanaDecrypt0r Android#
+WanaDecrypt0r Android
+#####################
+
 __Application Info :__
 
 App Name : wanaDecrypt0r android
